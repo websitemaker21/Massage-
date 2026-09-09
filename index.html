@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رسالة ليكي ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- شاشة الباسورد -->
+    <section id="loginScreen" class="login-screen">
+
+        <div class="floating-hearts">
+            <span>❤️</span>
+            <span>💗</span>
+            <span>💕</span>
+            <span>❤️</span>
+            <span>💗</span>
+        </div>
+
+        <div class="login-box">
+
+            <div class="login-heart">
+                ❤️
+            </div>
+
+            <h1>رسالة ليكي</h1>
+
+            <p>في حاجة صغيرة معمولة مخصوص ليكي ❤️</p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="اكتبي الباسورد"
+            >
+
+            <button onclick="checkPassword()">
+                دخول ❤️
+            </button>
+
+            <div id="passwordMessage"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- الموقع الأساسي -->
+    <main id="mainContent" class="hidden">
+
+        <!-- البداية -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="small-title">
+                    حاجة بسيطة ليكي ❤️
+                </span>
+
+                <h1>
+                    لشخص غالي على قلبي
+                </h1>
+
+                <p>
+                    حبيت أعمل حاجة صغيرة كده مخصوص ليكي،
+                    وأحط فيها شوية حاجات تعبر عن اللي في دماغي.
+                </p>
+
+                <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+                    يلا نشوفها ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- الرسالة -->
+        <section class="message-section">
+
+            <div class="card">
+
+                <h2>
+                    رسالة صغيرة ليكي 💗
+                </h2>
+
+                <div class="message-text">
+
+                    <p>
+                        بصي أنا مش عارف أقول إيه بصراحة 😂
+                    </p>
+
+                    <p>
+                        بس حبيت أعملك حاجة كده عشان إنتي من الناس اللي بحب أتكلم معاها
+                        وأحكيلها حاجات كتير، حتى لو بنقعد نهزر على حاجات ملهاش لازمة 😂
+                    </p>
+
+                    <p>
+                        بحب إن كلامنا دايمًا بيبقى سهل، نحكي لبعض ونضحك ونتكلم في أي حاجة،
+                        ومن غير ما نحس الوقت بيعدي.
+                    </p>
+
+                    <p>
+                        وممكن إنتي متكونيش واخدة بالك، بس بجد وجودك في يومي حاجة بحبها،
+                        وكلامنا من الحاجات اللي بتخليني مبسوط.
+                    </p>
+
+                    <p>
+                        فـ حبيت بس أقولك إنك شخص غالي عندي،
+                        وإن شاء الله نفضل دايمًا كده ونفضل نحكي لبعض كل حاجة
+                        ونضحك على نفس الحاجات اللي ملهاش لازمة 😂❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- العداد -->
+        <section class="counter-section" id="story">
+
+            <div class="card">
+
+                <h2>
+                    من أول يوم اتجمعنا فيه ❤️
+                </h2>
+
+                <p class="date">
+                    15 فبراير 2026 ❤️
+                </p>
+
+                <div class="counter">
+
+                    <div>
+                        <span id="days">0</span>
+                        <small>يوم</small>
+                    </div>
+
+                    <div>
+                        <span id="hours">0</span>
+                        <small>ساعة</small>
+                    </div>
+
+                    <div>
+                        <span id="minutes">0</span>
+                        <small>دقيقة</small>
+                    </div>
+
+                    <div>
+                        <span id="seconds">0</span>
+                        <small>ثانية</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    وكل يوم بيعدي بيزود عندنا وقت أكتر سوا ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- الموسيقى -->
+        <section class="music-section">
+
+            <div class="card">
+
+                <h2>
+                    أغنية للجو 🎶
+                </h2>
+
+                <p>
+                    شغليها وإنتي بتتفرجي على الموقع ❤️
+                </p>
+
+                <audio id="music" src="music.mp3"></audio>
+
+                <button onclick="toggleMusic()" id="musicButton">
+                    ▶ تشغيل الأغنية
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- الصور -->
+        <section class="gallery-section">
+
+            <div class="card">
+
+                <h2>
+                    شوية حاجات كده 📸
+                </h2>
+
+                <p>
+                    حاجات حبيت أحطها هنا وخلاص 😂❤️
+                </p>
+
+                <div class="gallery">
+
+                    <div class="photo-card">
+                        <img src="photo1.jpg" alt="صورة">
+                        <p>حاجة حلوة ❤️</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <img src="photo2.jpg" alt="صورة">
+                        <p>أيام حلوة</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <img src="photo3.jpg" alt="صورة">
+                        <p>ضحكة من القلب 😂</p>
+                    </div>
+
+                    <div class="photo-card">
+                        <img src="photo4.jpg" alt="صورة">
+                        <p>حاجة كده لازم تتحط ❤️</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- النهاية -->
+        <section class="final-section">
+
+            <div class="card">
+
+                <h2>
+                    وفي الآخر... ❤️
+                </h2>
+
+                <p>
+                    يارب نفضل دايمًا قريبين من بعض،
+                    ونفضل نحكي لبعض كل حاجة، التافهة قبل المهمة 😂
+                </p>
+
+                <p>
+                    ونفضل نضحك ونهزر ونتكلم في أي حاجة تيجي في دماغنا،
+                    ومن غير ما الكلام بينا يخلص ❤️
+                </p>
+
+                <p>
+                    ويا رب تفضلي دايمًا من الناس اللي وجودها بيخلّي اليوم أحلى.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
